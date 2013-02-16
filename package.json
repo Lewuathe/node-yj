@@ -1,0 +1,25 @@
+{
+    "name" : "node-yj",
+    "version" : "0.0.1",
+    "description" : "NodeJS wrapper for the Yahoo! JAPAN API",
+    "author": "Kai Sasaki, Yohei Yamaguchi",
+    "homepage": "http://github.com/Lewuathe/node-yj",
+    "repository" : {
+        "type" : "git",
+        "url" : "http://github.com/Lewuathe/node-yj.git"
+    },
+    "engine" : {
+        "node": ">=0.4.0"
+    },
+    "devDependencies": {
+        "oauth": "0.9.7"
+    },
+    "main" : ".",
+    "scripts": {
+        "test": "node ./test/all.js"
+    },
+    "licenses": [{
+        "type": "The MIT License",
+        "url": "http://www.opensource.org/licenses/mit-license.php"}
+    ]
+}
