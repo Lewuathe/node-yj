@@ -4,18 +4,27 @@ var error = require("./../../error");
 var Util = require("./../../util");
 
 
-var kanaConvert = module.exports = {
-    kanaConvert : function(params, callback){
+var userInfo = module.exports = {
+    userInfo : function(params, callback){
         var self = this;
-        if( typeof params != 'Object' ){
+        if( typeof params != 'object' ){
             params = {};
         }
         params.schema = "openid";
-        
         self.protocol = "https";
-        self.url  = "https://userinfo.yahooapis.jp/yconnect/v1/attribute",
-        self.request = self.url + Util.makeParams(params);
-        var req = require(self.protocol).get(self.request, function(res){
+        self.url  = "userinfo.yahooapis.jp",
+
+        self.options = {
+            host : self.url,
+            port : 443,
+            path : "/yconnect/v1/attribute?schema=openid",
+            method : "GET",
+            headers : {
+                authorization : "Bearer " + params.accessToken
+            }
+        };
+        
+        var req = require(self.protocol).request(self.options, function(res){
             var data = "";
             res.on("data", function(chunk){
                 data += chunk;
@@ -35,7 +44,8 @@ var kanaConvert = module.exports = {
                 console.log("Error");
             });
         });
-        
+        console.log(req);
+        req.end();
     }
 };
 
