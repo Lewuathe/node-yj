@@ -6,19 +6,6 @@ var Client = require('../index.js');
 var config = require("./config.json");
 
 
-var YJClient = require('node-yj');
-var client = new YJClient({
-    service : "yolp"
-});
-
-client.yolp.LocalSearch({
-    appid : <YOUR_APP_ID>,
-    query : "東京ミッドタウン"
-}, function(err, result){
-    // Do something with this result
-});
-
-
 
 vows.describe('YOLP API test').addBatch({
   
@@ -30,7 +17,8 @@ vows.describe('YOLP API test').addBatch({
       'LocalSearch': {
           topic : function(client){
               client.yolp.LocalSearch({
-                  appid : config.appid
+                  appid : config.appid,
+                  query : "六本木"
               }, this.callback);
           },
 

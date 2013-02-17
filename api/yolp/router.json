@@ -3,119 +3,170 @@
         "host"     : "search.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/localSearch"
+        "path"     : "/OpenLocalPlatform/V1/localSearch",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "GeoCoder" : {
         "host"     : "geo.search.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/geoCoder"
+        "path"     : "/OpenLocalPlatform/V1/geoCoder",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "ReverseGeoCoder" : {
         "host"     : "reverse.search.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/reverseGeoCoder"
+        "path"     : "/OpenLocalPlatform/V1/reverseGeoCoder",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "CassetteSearch" : {
         "host"     : "cassette.search.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/cassetteSearch"
+        "path"     : "/OpenLocalPlatform/V1/cassetteSearch",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "Place" : {
         "host"     : "weather.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/v1/place"
+        "path"     : "/v1/place",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "ZipCodeSearch" : {
         "host"     : "search.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/zipCodeSearch"
+        "path"     : "/OpenLocalPlatform/V1/zipCodeSearch",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "Get" : {
         "host"     : "placeinfo.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/V1/get"
+        "path"     : "/V1/get",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "AddressDirectory" : {
         "host"     : "search.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/addressDirectory"
+        "path"     : "/OpenLocalPlatform/V1/addressDirectory",
+        "defaults" : {
+            "output" : "json"
+        }
+
     },
 
     "RouteMap" : {
         "host"     : "routemap.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/routeMap"
+        "path"     : "/OpenLocalPlatform/V1/routeMap",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "Building" : {
         "host"     : "inner.search.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/building"
+        "path"     : "/OpenLocalPlatform/V1/building",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "ContentsGeoCoder" : {
         "host"     : "contents.search.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/contentsGeoCoder"
+        "path"     : "/OpenLocalPlatform/V1/contentsGeoCoder",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "ShapeSearch" : {
         "host"     : "spatial.search.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/shapeSearch"
+        "path"     : "/OpenLocalPlatform/V1/shapeSearch",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "Distance" : {
         "host"     : "distance.search.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/distance"
+        "path"     : "/OpenLocalPlatform/V1/distance",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "GenreCode" : {
         "host"     : "category.search.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/genreCode"
+        "path"     : "/OpenLocalPlatform/V1/genreCode",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "GetGid" : {
         "host"     : "storage.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/getGid"
+        "path"     : "/OpenLocalPlatform/V1/getGid",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "DatumConvert" : {
         "host"     : "datum.search.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/datumConvert"
+        "path"     : "/OpenLocalPlatform/V1/datumConvert",
+        "defaults" : {
+            "output" : "json"
+        }
     },
 
     "GetAltitude" : {
         "host"     : "alt.search.olp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
-        "path"     : "/OpenLocalPlatform/V1/getAltitude"
+        "path"     : "/OpenLocalPlatform/V1/getAltitude",
+        "defaults" : {
+            "output" : "json"
+        }
     }
-
 }
