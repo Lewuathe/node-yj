@@ -7,11 +7,19 @@ var Util = require("./../../util");
 var kanaConvert = module.exports = {
     kanaConvert : function(params, callback){
         var self = this;
+        self.name   = "kanaConvert";
+        self.config = self.__proto__.router[self.name];
 
-        self.protocol = "http";
-        self.url  = "http://jlp.yahooapis.jp/JIMService/V1/conversion";
-        self.request = self.url + Util.makeParams(params);
-        var req = require(self.protocol).get(self.request, function(res){
+        self.options = {
+            host : self.config.host,
+            port : self.config.protocol == "http" ? 80 : 443,
+            path : self.config.path + Util.makeParams(params),
+            method : self.config.method
+        };
+        
+
+
+        var req = require(self.config.protocol).request(self.options, function(res){
             var data = "";
             res.on("data", function(chunk){
                 data += chunk;
@@ -22,8 +30,8 @@ var kanaConvert = module.exports = {
                     callback(new error.HttpError(data, res.statusCode));
                 }
                 else {
-                    res.data = data;
-                    callback(null, res);
+                    res.data = data
+                    callback(null, res.data);
                 }
             });
             
@@ -31,6 +39,7 @@ var kanaConvert = module.exports = {
                 console.log("Error");
             });
         });
+        req.end();
         
     }
 };

@@ -1,0 +1,15 @@
+{
+    "kanaConvert" : {
+        "host"     : "jlp.yahooapis.jp",
+        "method"   : "GET",
+        "protocol" : "http",
+        "path"     : "/JIMService/V1/conversion"
+    },
+
+    "morphAnal" : {
+        "host"     : "jlp.yahooapis.jp",
+        "method"   : "GET",
+        "protocol" : "http",
+        "path"     : "/MAService/V1/parse"
+    }
+}

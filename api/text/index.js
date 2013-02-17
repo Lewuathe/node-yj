@@ -15,9 +15,12 @@ var proto = {
         Util.log(err, block, msg.user, "error");
         if (typeof err == "string")
             err = new error.InternalServerError(err);
-        if (callback)
+        if (callback){
             callback(err);
-    }
+        }
+    },
+
+    router : JSON.parse(fs.readFileSync(__dirname + "/router.json", "utf8"))
 };
 
 ["morphAnal", "kanaConvert"].forEach(function(api) {
@@ -25,3 +28,4 @@ var proto = {
 });
 
 YJTextHandler.prototype = proto;
+

@@ -43,7 +43,6 @@ var userInfo = module.exports = {
                 console.log("Error");
             });
         });
-        console.log(req);
         req.end();
     }
 };
