@@ -1,0 +1,61 @@
+{
+    "LatestPowerUsage" : {
+        "host"     : "setsuden.yahooapis.jp",
+        "method"   : "GET",
+        "protocol" : "http",
+        "path"     : "/v1/Setsuden/latestPowerUsage",
+        "defaults" : {
+            "output" : "json"
+        }
+    },
+    
+    "Volunteers" : {
+        "host"     : "shinsai.yahooapis.jp",
+        "method"   : "GET",
+        "protocol" : "http",
+        "path"     : "/v1/volunteers",
+        "defaults" : {
+            "output" : "json"
+        }
+    },
+
+    "ElectricPowerForcast" : {
+        "host"     : "setsuden.yahooapis.jp",
+        "method"   : "GET",
+        "protocol" : "http",
+        "path"     : "/v1/Setsuden/electricPowerForecast",
+        "defaults" : {
+            "output" : "json"
+        }
+    },
+
+    "Search" : {
+        "host"     : "shinsai.yahooapis.jp",
+        "method"   : "GET",
+        "protocol" : "http",
+        "path"     : "/v1/Archive/search",
+        "defaults" : {
+            "output" : "json"
+        }
+    },
+
+    "LocalSearch" : {
+        "host"     : "shinsai.yahooapis.jp",
+        "method"   : "GET",
+        "protocol" : "http",
+        "path"     : "/v1/Archive/localSearch",
+        "defaults" : {
+            "output" : "json"
+        }
+    },
+
+    "Area" : {
+        "host"     : "shinsai.yahooapis.jp",
+        "method"   : "GET",
+        "protocol" : "http",
+        "path"     : "/v1/Archive/area",
+        "defaults" : {
+            "output" : "json"
+        }
+    }
+}

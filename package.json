@@ -15,7 +15,8 @@
         "node": ">=0.4.0"
     },
     "dependencies" : {
-        "pkginfo" : "0.2.x"
+        "pkginfo" : "0.2.x",
+        "xml2json" : "0.3.x"
     },
     "devDependencies": {
         "oauth": "0.9.7",

@@ -4,10 +4,10 @@ var error = require("./../../error");
 var Util = require("./../../util");
 
 
-var MAService = module.exports = {
-    MAService : function(params, callback){
+var LatestPowerUsage = module.exports = {
+    LatestPowerUsage : function(params, callback){
         var self           = this;
-        self.name          = "MAService";
+        self.name          = "LatestPowerUsage";
         self.config        = self.__proto__.router[self.name];
         self.requestClient = self.__proto__.requestClient;
 
@@ -22,6 +22,7 @@ var MAService = module.exports = {
             method : self.config.method
         };
         
+
 
         self.requestClient(self.config, self.options, callback);
     }

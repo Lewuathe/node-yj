@@ -11,6 +11,10 @@ var KeyPhraseService = module.exports = {
         self.config        = self.__proto__.router[self.name];
         self.requestClient = self.__proto__.requestClient;
 
+        if( self.config.defaults ){
+            Util.extend(params, self.config.defaults, true);
+        }
+
         self.options = {
             host : self.config.host,
             port : self.config.protocol == "http" ? 80 : 443,

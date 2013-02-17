@@ -5,7 +5,7 @@ var fs = require('fs');
 var Util = require("./../../util");
 var error = require("./../../error");
 
-var YJTextHandler = module.exports = function(client){
+var YJShinsaiHandler = module.exports = function(client){
     var self = this;
     self.client = client;
 };
@@ -35,8 +35,7 @@ var proto = {
                 }
                 else {
                     res.data = data;
-                    var retJson = Util.toJson(res.data);
-                    callback(null, retJson);
+                    callback(null, res.data);
                 }
             });
             
@@ -48,9 +47,9 @@ var proto = {
     }
 };
 
-["JIMService", "MAService", "FuriganaService","KouseiService", "DAService", "KeyPhraseService"].forEach(function(api) {
+["LatestPowerUsage", "Volunteers", "ElectricPowerForecast", "Search", "LocalSearch", "Area"].forEach(function(api) {
     Util.extend(proto, require("./" + api));
 });
 
-YJTextHandler.prototype = proto;
+YJShinsaiHandler.prototype = proto;
 

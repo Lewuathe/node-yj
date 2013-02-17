@@ -4,10 +4,10 @@ var error = require("./../../error");
 var Util = require("./../../util");
 
 
-var MAService = module.exports = {
-    MAService : function(params, callback){
+var ElectricPowerForecast = module.exports = {
+    ElectricPowerForecast : function(params, callback){
         var self           = this;
-        self.name          = "MAService";
+        self.name          = "ElectricPowerForecast";
         self.config        = self.__proto__.router[self.name];
         self.requestClient = self.__proto__.requestClient;
 
@@ -26,6 +26,5 @@ var MAService = module.exports = {
         self.requestClient(self.config, self.options, callback);
     }
 };
-
 
 

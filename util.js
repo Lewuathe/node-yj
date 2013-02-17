@@ -10,6 +10,7 @@
  **/
 
 var Util = require("util");
+var xml2json = require("xml2json");
 
 /**
  *  Util#extend(dest, src, noOverwrite) -> Object
@@ -152,5 +153,13 @@ exports.makeParams = function(params){
         isFirst = false;
     }
     return "?" + ret;
+};
+
+exports.toJson = function(xml, options){
+    return xml2json.toJson(xml, options);
+};
+
+exports.toXml = function(json, options){
+    return xml2json.toXml(json, options);
 };
 
