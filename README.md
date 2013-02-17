@@ -60,3 +60,18 @@ In this case, your code should be like below.
 	    // res is server response.
 		// Use as you like
 	});
+
+### Test 
+
+Before running test code, you have to make own appid configuration file like below.
+
+    {
+	    "appid" : <YOUR_APP_ID>
+	}
+
+This file is put on test/ as named config.json. And then, you can run test code.
+
+
+    $ npm install --dev
+	$ make test
+
