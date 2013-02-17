@@ -11,6 +11,13 @@
 
 var Util = require("util");
 
+exports.SocketError = function(target){
+    this.message = "Socket Error: " + target;
+    Error.call(this.message);
+}
+
+Util.inherits(exports.SocketError, Error);
+
 exports.HttpError = function(message, code) {
     Error.call(this, message);
     //Error.captureStackTrace(this, arguments.callee);
@@ -19,7 +26,7 @@ exports.HttpError = function(message, code) {
 };
 Util.inherits(exports.HttpError, Error);
 
-(function() {
+var setError = function() {
     /**
      *  HttpError#toString() -> String
      * 
@@ -42,7 +49,10 @@ Util.inherits(exports.HttpError, Error);
         };
     };
     
-}).call(exports.HttpError.prototype);
+};
+
+setError.call(exports.HttpError.prototype);
+setError.call(exports.SocketError.prototype);
 
 
 var statusCodes = {

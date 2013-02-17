@@ -9,6 +9,7 @@ var morphAnal = module.exports = {
         var self = this;
         self.name   = "morphAnal";
         self.config = self.__proto__.router[self.name];
+        self.requestClient = self.__proto__.requestClient;
 
         self.options = {
             host : self.config.host,
@@ -18,29 +19,7 @@ var morphAnal = module.exports = {
         };
         
 
-
-        var req = require(self.config.protocol).request(self.options, function(res){
-            var data = "";
-            res.on("data", function(chunk){
-                data += chunk;
-            });
-
-            res.on("end", function(){
-                if (res.statusCode >= 400 && res.statusCode < 600 || res.statusCode < 10) {
-                    callback(new error.HttpError(data, res.statusCode));
-                }
-                else {
-                    res.data = data;
-                    callback(null, res.data);
-                }
-            });
-            
-            res.on("error", function(err){
-                console.log("Error");
-            });
-        });
-        req.end();
-        
+        self.requestClient(self.config, self.options, callback);
     }
 };
 
