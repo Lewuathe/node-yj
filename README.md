@@ -20,6 +20,7 @@ or
 ## How to use
 
 If you already have access_token of yconnect, you can access any API in YJDN.
+Return value is default json considering of node availability.
 
 ### Not require authorization
 

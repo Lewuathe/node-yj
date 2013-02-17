@@ -1,6 +1,6 @@
 {
     "name" : "node-yj",
-    "version" : "0.0.1",
+    "version" : "0.0.2",
     "description" : "NodeJS wrapper for the Yahoo! JAPAN API",
     "author": "Kai Sasaki, Yohei Yamaguchi",
     "homepage": "http://github.com/Lewuathe/node-yj",
