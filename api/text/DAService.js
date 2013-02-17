@@ -4,11 +4,12 @@ var error = require("./../../error");
 var Util = require("./../../util");
 
 
-var kanaConvert = module.exports = {
-    kanaConvert : function(params, callback){
-        var self = this;
-        self.name   = "kanaConvert";
-        self.config = self.__proto__.router[self.name];
+var DAService = module.exports = {
+    DAService : function(params, callback){
+        var self           = this;
+        self.name          = "DAService";
+        self.config        = self.__proto__.router[self.name];
+        self.requestClient = self.__proto__.requestClient;
 
         self.options = {
             host : self.config.host,

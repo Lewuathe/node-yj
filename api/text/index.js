@@ -47,7 +47,7 @@ var proto = {
     }
 };
 
-["morphAnal", "kanaConvert"].forEach(function(api) {
+["JIMService", "MAService", "FuriganaService","KouseiService", "DAService", "KeyPhraseService"].forEach(function(api) {
     Util.extend(proto, require("./" + api));
 });
 

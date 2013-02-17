@@ -1,15 +1,44 @@
 {
-    "kanaConvert" : {
+    "JIMService" : {
         "host"     : "jlp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
         "path"     : "/JIMService/V1/conversion"
     },
 
-    "morphAnal" : {
+    "MAService" : {
         "host"     : "jlp.yahooapis.jp",
         "method"   : "GET",
         "protocol" : "http",
         "path"     : "/MAService/V1/parse"
+    },
+
+    "FuriganaService" : {
+        "host"     : "jlp.yahooapis.jp",
+        "method"   : "GET",
+        "protocol" : "http",
+        "path"     : "/FuriganaService/V1/furigana"
+    },
+
+    "KouseiService" : {
+        "host"     : "jlp.yahooapis.jp",
+        "method"   : "GET",
+        "protocol" : "http",
+        "path"     : "/KouseiService/V1/kousei"
+    },
+
+    "DAService" : {
+        "host"     : "jlp.yahooapis.jp",
+        "method"   : "GET",
+        "protocol" : "http",
+        "path"     : "/DAService/V1/parse"
+    },
+
+    "KeyPhraseService" : {
+        "host"     : "jlp.yahooapis.jp",
+        "method"   : "GET",
+        "protocol" : "http",
+        "path"     : "/KeyphraseService/V1/extract"
     }
+    
 }

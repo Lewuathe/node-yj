@@ -4,10 +4,10 @@ var error = require("./../../error");
 var Util = require("./../../util");
 
 
-var morphAnal = module.exports = {
-    morphAnal : function(params, callback){
+var MAService = module.exports = {
+    MAService : function(params, callback){
         var self = this;
-        self.name   = "morphAnal";
+        self.name   = "MAService";
         self.config = self.__proto__.router[self.name];
         self.requestClient = self.__proto__.requestClient;
 
