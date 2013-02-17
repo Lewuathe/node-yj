@@ -9,7 +9,5 @@ var Client = module.exports = function(config){
     self.service = config.service;
     var serviceClt = require('./api/' + self.service);
     self[self.service] = new serviceClt(self);
-    
-    
 };
 

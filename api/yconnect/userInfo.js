@@ -1,8 +1,7 @@
 "use strict";
 
-var error = require("./../../error");
-var Util = require("./../../util");
-
+var error  = require("./../../error");
+var Util   = require("./../../util");
 
 var userInfo = module.exports = {
     userInfo : function(params, callback){
@@ -20,7 +19,7 @@ var userInfo = module.exports = {
             path : "/yconnect/v1/attribute?schema=openid",
             method : "GET",
             headers : {
-                authorization : "Bearer " + params.accessToken
+                authorization : "Bearer " + params.accesToken
             }
         };
         

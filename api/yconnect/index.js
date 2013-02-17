@@ -9,6 +9,7 @@ var error = require("./../../error");
 var YConnectHandler = module.exports = function(client){
     var self = this;
     self.client = client;
+    self.router = JSON.parse(fs.readFileSync(__dirname + "/router.json", "utf8");
 };
 
 var proto = {
