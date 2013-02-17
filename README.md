@@ -76,3 +76,6 @@ This file is put on test/ as named config.json. And then, you can run test code.
     $ npm install --dev
 	$ make test
 
+### License
+
+MIT License. Please see the LICENSE file in details.
