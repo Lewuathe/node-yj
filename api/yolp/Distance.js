@@ -22,7 +22,6 @@ var Distance = module.exports = {
             method : self.config.method
         };
         
-        console.log(self.options);
         self.requestClient(self.config, self.options, callback);
     }
 };
