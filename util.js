@@ -163,3 +163,6 @@ exports.toXml = function(json, options){
     return xml2json.toXml(json, options);
 };
 
+exports.spaceUrlEncode = function(url){
+    return url.replace(/ /g, '%20');
+};

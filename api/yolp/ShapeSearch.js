@@ -18,7 +18,7 @@ var ShapeSearch = module.exports = {
         self.options = {
             host : self.config.host,
             port : self.config.protocol == "http" ? 80 : 443,
-            path : self.config.path + Util.makeParams(params),
+            path : Util.spaceUrlEncode(self.config.path + Util.makeParams(params)),
             method : self.config.method
         };
         
