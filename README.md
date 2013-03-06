@@ -34,7 +34,7 @@ token. So whenever you like, you can access these APIs.
 	    service : "text"
 	});
 
-	yjClient.yconnect.kanaConvert({
+	yjClient.text.kanaConvert({
 	    sentence : "きょうはいいてんきですね",
 		appid : <Your Application ID>
 	}, function(res){
