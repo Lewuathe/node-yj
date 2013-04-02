@@ -76,7 +76,7 @@ This file is put on test/ as named config.json. And then, you can run test code.
     $ npm install --dev
 	$ make test
 
-However vows module is not support node v0.10.0. So this test codes requires under v0.10.0 versions.
+However vows module does not support node v0.10.0. So this test codes require under v0.10.0 versions.
 
 ### License
 
