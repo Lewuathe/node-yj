@@ -1,0 +1,11 @@
+{
+    "NewsWebService" : {
+	"host"     : "news.yahooapis.jp",
+	"method"   : "GET",
+	"protocol" : "http",
+	"path"     : "/NewsWebService/V2/topics",
+	"default" : {
+	    "output" : "json"
+	}
+    }
+}

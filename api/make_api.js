@@ -6,8 +6,9 @@ argv.option({
     short : 'f',
     type : 'string',
     description : "Target service. You can run after complete router.json",
-    example : "make_api.js -f text"
+    example : "node make_api.js text"
 });
+
 
 var argvs = argv.run();
 var router = JSON.parse(fs.readFileSync("./" + argvs.targets + "/router.json"));

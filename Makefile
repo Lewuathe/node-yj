@@ -5,7 +5,7 @@ SOURCES = api/**/*.js
 # ==============================================================================
 
 VOWS = ./node_modules/.bin/vows
-TESTS ?= test/yolp-test.js
+TESTS ?= test/*-test.js
 
 test:
 	@NODE_ENV=test $(VOWS) $(TESTS)
