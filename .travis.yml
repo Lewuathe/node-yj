@@ -1,0 +1,23 @@
+---
+language: node_js
+node_js:
+- '0.10'
+- '0.8'
+
+before_script:
+  - "./configure"
+
+script:
+  - "make test"
+
+notifications:
+  email:
+  - lewuathe@me.com
+
+env:
+  global:
+  - secure: ! 'W/qK/A7YiDWHZFHhKo5LV/4J74YrEd5lsJYJwncln4aZznJMHb6UxUlikwaZ
+
+      3GYtXQBPA3gKJv9pgv7jPexIELCHRSalW9NLfyulN4qrLZC04n6u2Bl2w/KW
+
+      LgKKuFJcMtiiQUFovN3s0kxcI/FwR/6c08b4luPiVIaKO3p+u50='
