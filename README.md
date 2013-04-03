@@ -1,4 +1,4 @@
-# node-yj
+# node-yj [![Build Status](https://secure.travis-ci.org/lewuathe/node-yj.png)](http://travis-ci.org/lewuathe/node-yj)
 =======
 
 A Node.JS module, which provides an object oriented wrapper for the YJDN APIs.
