@@ -52,6 +52,7 @@ vows.describe('Text API test').addBatch({
           }
       },
 
+      /*
       'DAService' : {
           topic : function(client){
               client.text.DAService({
@@ -64,6 +65,7 @@ vows.describe('Text API test').addBatch({
               assert.ok(result);
           }
       },
+      */
 
       'KeyPhraseService' : {
           topic : function(client){

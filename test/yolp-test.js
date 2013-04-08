@@ -152,6 +152,7 @@ vows.describe('YOLP API test').addBatch({
           }
       },
 
+      /*
       'ShapeSearch' : {
           topic : function(client){
               client.yolp.ShapeSearch({
@@ -178,6 +179,8 @@ vows.describe('YOLP API test').addBatch({
               assert.ok(result);
           }
       },
+
+      */
 
       'GenreCode' : {
           topic : function(client){

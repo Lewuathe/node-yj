@@ -4,8 +4,9 @@ SOURCES = api/**/*.js
 # Node Tests
 # ==============================================================================
 
-VOWS = ./node_modules/.bin/vows
-TESTS ?= test/news-test.js
+VOWS = ./node_modules/.bin/vows -v
+TESTS ?= test/*-test.js
+
 
 test:
 	@NODE_ENV=test $(VOWS) $(TESTS)
