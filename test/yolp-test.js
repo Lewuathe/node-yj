@@ -104,7 +104,8 @@ vows.describe('YOLP API test').addBatch({
       'AddressDirectory' : {
           topic : function(client){
               client.yolp.AddressDirectory({
-                  appid : config.appid
+                  appid : config.appid,
+                  ac    : 13
               }, this.callback);
           },
 
